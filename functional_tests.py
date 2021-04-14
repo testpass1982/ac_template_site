@@ -13,7 +13,7 @@ class NewVisitorTest(unittest.TestCase):
 
     def setUp(self):
         self.url = 'http://{}/'.format(command_line_param)
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.Firefox(executable_path=r'/usr/local/bin/geckodriver')
 
     def tearDown(self):
         self.browser.quit()
