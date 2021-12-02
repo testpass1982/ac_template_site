@@ -30,7 +30,7 @@ class Command(BaseCommand):
         self.scss_file = ""
         self.js_file = ""
         self.component_title = ""
-        self.parameters
+        self.parameters = {}
 
     def add_arguments(self, parser):
         parser.add_argument(
